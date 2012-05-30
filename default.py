@@ -32,7 +32,7 @@ def playAudio(url):
         return xbmcplugin.setResolvedUrl(pluginhandle, True, listitem)
 
 def cleanTitle(title):
-        title=title.replace("&lt;","<").replace("&gt;",">").replace("&amp;","&").replace("&#039;","\\").replace("&#263;","c").replace("&#269;","c").replace("&#8220;","\"").replace("&#8221;","\"").replace("&quot;","\"").replace("&szlig;","ß").replace("&ndash;","-")
+        title=title.replace("&lt;","<").replace("&gt;",">").replace("&amp;","&").replace("&#039;","\\").replace("&#263;","c").replace("&#269;","c").replace("&#273;","d").replace("&#8220;","\"").replace("&#8221;","\"").replace("&quot;","\"").replace("&szlig;","ß").replace("&ndash;","-")
         title=title.replace("&Auml;","Ä").replace("&Uuml;","Ü").replace("&Ouml;","Ö").replace("&auml;","ä").replace("&uuml;","ü").replace("&ouml;","ö")
         title=title.replace('<SPAN STYLE="font-family: Arial,Helvetica,Geneva,Sans-serif;">',"").replace("</SPAN>","")
         title=title.strip()
